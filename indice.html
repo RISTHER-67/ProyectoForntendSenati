@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altarek</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#" id="home-link">AltaTek</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Samsung</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="#">Red Magic</a></li>
+            </ul>
+            <button class="btn btn-outline-primary mr-2" data-toggle="modal" data-target="#loginModal" ><a href="login.html">Iniciar sesión</a></button>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#cartModal">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge badge-light" id="cart-count">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Carrito de Compras -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Tu Carrito</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="cart-items" class="mb-3">
+                        <!-- Items del carrito se agregarán aquí -->
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5>Total: <span id="cart-total">$0</span></h5>
+                        <button class="btn btn-primary">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Login -->
+    
+
+    <div class="bg-primary text-white text-center py-3">
+        <h2>Ofertas especiales</h2>
+        <p>Los modelos más nuevos con descuento</p>
+    </div>
+
+    <div class="container mt-4">
+        <h3 class="text-center">Productos Destacados</h3>
+        
+        <!-- Menú de Filtros -->
+        <div class="filter-menu mb-4">
+            <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#filterCollapse">
+                <i class="fas fa-filter"></i> Filtros
+            </button>
+            
+            <div class="collapse mt-2" id="filterCollapse">
+                <div class="card card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label>Marca</label>
+                            <select id="filter-brand" class="form-control">
+                                <option value="">Todas</option>
+                                <option value="iPhone">iPhone</option>
+                                <option value="Samsung">Samsung</option>
+                                <option value="Google">Google</option>
+                                <option value="Red Magic">Red Magic</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Precio Máximo</label>
+                            <select id="filter-price" class="form-control">
+                                <option value="">Todos</option>
+                                <option value="500">Hasta $500</option>
+                                <option value="800">Hasta $800</option>
+                                <option value="1000">Hasta $1000</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Modelo</label>
+                            <input type="text" id="filter-model" class="form-control" placeholder="Buscar modelo...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mensaje sin resultados -->
+        <div id="no-results" class="alert alert-warning text-center" style="display:none">
+            No se encontraron productos con esos criterios
+        </div>
+
+        <div class="row " id="product-list">
+            <div class="col-md-3">
+                <div class="product">
+                    <div class="card h-100">
+                        <img src="imagenes/iphone 13 pro.jpg" class="card-img-top" alt="iPhone 13 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 13 Pro</h5>
+                            <p class="card-text">128 GB</p>
+                            <p class="card-text">$999</p>
+                            <button class="btn btn-success">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Samsung Galaxy S21 Ultra">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
+                            <p class="card-text">256 GB</p>
+                            <p class="card-text">$1,199</p>
+                            <button class="btn btn-success">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Google Pixel">
+                        <div class="card-body">
+                            <h5 class="card-title">Google Pixel</h5>
+                            <p class="card-text">128 GB</p>
+                            <p class="card-text">$699</p>
+                            <button class="btn btn-success">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product">
+                    <div class="card h-100">
+                        <img src="https://via.placeholder.com/150" class="card-img-top" alt="iPhone 14 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 14 Pro</h5>
+                            <p class="card-text">256 GB</p>
+                            <p class="card-text">$1,099</p>
+                            <button class="btn btn-success">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <section id="contacto" class="container mt-5">
+        <h2 class="text-center">Contáctanos</h2>
+        <form id="contact-form" class="col-md-6 mx-auto">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <div id="chatbot-container" class="fixed-bottom mr-3 mb-3" style="width: 300px; right: 0; display: none;">
+        <div class="card">
+            <div class="card-header bg-primary text-white d-flex justify-content-between">
+                <span>Asistente Virtual</span>
+                <button id="close-chat" class="btn btn-sm btn-light">×</button>
+            </div>
+            <div id="chat-messages" class="card-body" style="height: 200px; overflow-y: auto;"></div>
+            <div class="card-footer">
+                <input type="text" id="chat-input" class="form-control" placeholder="Escribe tu mensaje...">
+                <button id="send-chat" class="btn btn-primary mt-2">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <button id="chat-toggle" class="btn btn-primary fixed-bottom mr-3 mb-3" style="right: 0;">
+        <i class="fas fa-comment"></i>
+    </button>
+
+    <footer class="bg-dark text-white py-4 mt-5" style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; padding: 0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Ejemplo 123, Lima</p>
+                    <p><i class="fas fa-phone"></i> (01) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@altagamastore.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Términos y condiciones</a></li>
+                        <li><a href="#" class="text-white">Política de privacidad</a></li>
+                        <li><a href="#" class="text-white">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 AltaGama Store. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#home-link').click(function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 'smooth');
+        });
+    });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
