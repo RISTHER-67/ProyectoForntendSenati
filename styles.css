@@ -1,25 +1,25 @@
 /* Base Styles */
 body {
-    background-color: #0a0a0a;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 /* Navigation */
 .navbar {
-    background-color: #1a1a1a !important;
+    background-color: #fffcfc !important;
     
 }
 
 .navbar-brand {
-    color: #ffffff !important;
+    color: #000000 !important;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .nav-link {
-    color: #ffffff !important;
+    color: #000000 !important;
     transition: all 0.3s ease;
 }
 
@@ -38,20 +38,21 @@ body {
 
 /* Product Cards */
 .product {
-    background-color: #1a1a1a;
-    border: 1px solid #333;
+    background-color: #fdfafa;
+    border: 2px solid #e6e2e2;
     margin: 15px 0;
     padding: 0;
     overflow: hidden;
     transition: all 0.3s ease;
-    transform: perspective(1000px) rotateX(0deg);
+    transform: perspective(1000px) rotateY(0deg);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 20px;
 }
 
 .product:hover {
-    transform: perspective(1000px) rotateX(5deg);
+    transform: scale(1.1);
     /*box-shadow: 0 0 20px #ff0000;
-    border-color: #ff0000;*/
+    */border-color: #e6e2e2;
 }
 
 .product .card {
@@ -61,9 +62,9 @@ body {
 }
 
 .product .card-img-top {
-    background: #0a0a0a;
+    background: #ffffff;
     padding: 20px;
-    border-bottom: 1px solid #333;
+    
 }
 
 .product .card-body {
@@ -71,34 +72,36 @@ body {
 }
 
 .product .card-title {
-    color: #ffffff;
+    color: #000000;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .product .card-text {
-    color: #aaaaaa;
+    color: #000000;
 }
 
 .product .btn {
-    background: linear-gradient(135deg, #2cf32c, #1c4d13);
+    background-color: #007BFF;
     border: none;
     border-radius: 10px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
     transition: all 0.3s ease;
+    color: #fffefe;
 }
 
 .product .btn:hover {
-    background: linear-gradient(135deg, #2cf32c, #1c4d13);
+    background-color: #0a0a0a;
+    color: #fdfafa;
     box-shadow: 0 0 15px #f5f5f5;
     transform: translateY(-2px);
 }
 
 /* Buttons */
+
 .btn-primary {
-    border-radius: 10px;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
@@ -106,7 +109,6 @@ body {
 }
 
 .btn-primary:hover {
-    
     box-shadow: 0 0 15px #fcfafa;
     transform: translateY(-2px);
 }
@@ -115,11 +117,11 @@ body {
     color: #ffffff;
     border-color: #ffffff;
     background: transparent;
-    border-radius: 10%;
+    
 }
 
 .btn-outline-primary:hover {
-    background: #8fe420;
+    background: #007BFF;
     color: #0b0f05;
     box-shadow: 0 0 15px #8fe420;
 }
@@ -127,12 +129,12 @@ body {
 /* Footer */
 footer {
     background-color: #1a1a1a;
-    border-top: 2px solid #ff0000;
+    border-top: 2px solid #4b4848;
     padding: 40px 0 20px;
 }
 
 footer h5 {
-    color: #ff0000;
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -185,8 +187,8 @@ footer a:hover {
 }
 
 #chat-toggle {
-    background: linear-gradient(135deg, #ff0000, #cc0000);
-    box-shadow: 0 0 15px #ff0000;
+    background: linear-gradient(135deg, #007BFF, #007BFF);
+    box-shadow: 0 0 15px #ffffff;
     z-index: 999;
     position: fixed;
     bottom: 30px;
@@ -194,7 +196,7 @@ footer a:hover {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     font-size: 1.5rem;
     display: flex;
@@ -235,9 +237,9 @@ footer a:hover {
 }
 
 .form-control {
-    background-color: #0a0a0a;
+    background-color: #ffffff;
     border: 1px solid #333;
-    color: #ffffff;
+    color: #000000;
 }
 
 .form-control:focus {
@@ -253,13 +255,17 @@ footer a:hover {
 /* Filter Menu */
 .filter-menu {
     margin-bottom: 1.5rem;
+    border: 2px solid #e6e2e2;
+    border-radius: 5px;
+    
 }
 
 .filter-menu .btn {
     padding: 8px 20px;
-    border-radius: 0;
+    border-radius: 10px;
     font-weight: 500;
     transition: all 0.2s;
+    color: #000000;
 }
 
 .filter-menu .card {
@@ -267,11 +273,13 @@ footer a:hover {
     border-radius: 0;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
     padding: 15px;
-    background-color: #1a1a1a;
+    background-color: #ffffff;
+
 }
 
 .filter-menu label {
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: #000000;
+    
 }

@@ -1,13 +1,13 @@
 [
     {
-        "name": "iPhone 13 Pro",
+        "name": "iPhone 16 Pro Max",
         "brand": "iPhone",
         "price": 999,
-        "storage": "128 GB",
-        "image": "imagenes/iphone 13 pro.jpg"
+        "storage": "256 GB",
+        "image": "imagenes/iphone 16 pro max .png"
     },
     {
-        "name": "Samsung Galaxy S21 Ultra",
+        "name": "Samsung Galaxy S23 Ultra",
         "brand": "Samsung",
         "price": 1199,
         "storage": "256 GB",

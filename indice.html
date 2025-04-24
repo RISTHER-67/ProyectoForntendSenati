@@ -18,14 +18,18 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Samsung</a></li>
-                
                 <li class="nav-item"><a class="nav-link" href="#">Red Magic</a></li>
+                <li>
+                    
+                </li>
             </ul>
+            
             <button class="btn btn-outline-primary mr-2" data-toggle="modal" data-target="#loginModal" ><a href="login.html">Iniciar sesión</a></button>
             <button class="btn btn-primary" data-toggle="modal" data-target="#cartModal">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="badge badge-light" id="cart-count">0</span>
             </button>
+            
         </div>
     </nav>
 
@@ -54,7 +58,41 @@
 
     <!-- Modal Login -->
     
-
+    <div class="filter-menu mb-4">
+        <button class="btn btn-outline" type="button" data-toggle="collapse" data-target="#filterCollapse">
+            <i class="fas fa-filter"></i> Filtros
+        </button>
+        
+        <div class="collapse mt-2" id="filterCollapse">
+            <div class="card card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label>Marca</label>
+                        <select id="filter-brand" class="form-control">
+                            <option value="">Todas</option>
+                            <option value="iPhone">iPhone</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Google">Google</option>
+                            <option value="Red Magic">Red Magic</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Precio Máximo</label>
+                        <select id="filter-price" class="form-control">
+                            <option value="">Todos</option>
+                            <option value="500">Hasta $500</option>
+                            <option value="800">Hasta $800</option>
+                            <option value="1000">Hasta $1000</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label>Modelo</label>
+                        <input type="text" id="filter-model" class="form-control" placeholder="Buscar modelo...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="bg-primary text-white text-center py-3">
         <h2>Ofertas especiales</h2>
         <p>Los modelos más nuevos con descuento</p>
@@ -64,41 +102,7 @@
         <h3 class="text-center">Productos Destacados</h3>
         
         <!-- Menú de Filtros -->
-        <div class="filter-menu mb-4">
-            <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#filterCollapse">
-                <i class="fas fa-filter"></i> Filtros
-            </button>
-            
-            <div class="collapse mt-2" id="filterCollapse">
-                <div class="card card-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <label>Marca</label>
-                            <select id="filter-brand" class="form-control">
-                                <option value="">Todas</option>
-                                <option value="iPhone">iPhone</option>
-                                <option value="Samsung">Samsung</option>
-                                <option value="Google">Google</option>
-                                <option value="Red Magic">Red Magic</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <label>Precio Máximo</label>
-                            <select id="filter-price" class="form-control">
-                                <option value="">Todos</option>
-                                <option value="500">Hasta $500</option>
-                                <option value="800">Hasta $800</option>
-                                <option value="1000">Hasta $1000</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <label>Modelo</label>
-                            <input type="text" id="filter-model" class="form-control" placeholder="Buscar modelo...">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- Mensaje sin resultados -->
         <div id="no-results" class="alert alert-warning text-center" style="display:none">
@@ -111,7 +115,7 @@
                     <div class="card h-100">
                         <img src="imagenes/iphone 13 pro.jpg" class="card-img-top" alt="iPhone 13 Pro">
                         <div class="card-body">
-                            <h5 class="card-title">iPhone 13 Pro</h5>
+                            <h5 class="card-title">iPhone 16 Pro Max</h5>
                             <p class="card-text">128 GB</p>
                             <p class="card-text">$999</p>
                             <button class="btn btn-success">Añadir al Carrito</button>
@@ -124,7 +128,7 @@
                     <div class="card h-100">
                         <img src="https://via.placeholder.com/150" class="card-img-top" alt="Samsung Galaxy S21 Ultra">
                         <div class="card-body">
-                            <h5 class="card-title">Samsung Galaxy S21 Ultra</h5>
+                            <h5 class="card-title">Samsung Galaxy S23 Ultra</h5>
                             <p class="card-text">256 GB</p>
                             <p class="card-text">$1,199</p>
                             <button class="btn btn-success">Añadir al Carrito</button>
