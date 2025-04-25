@@ -1,17 +1,17 @@
 [
     {
-        "name": "iPhone 13 Pro",
+        "name": "iPhone 16 Pro Max",
         "brand": "iPhone",
-        "price": 999,
-        "storage": "128 GB",
-        "image": "imagenes/iphone 13 pro.jpg"
+        "price": 1899,
+        "storage": "256 GB",
+        "image": "imagenes/Apple-iPhone-16-Pro-hero-geo-240909_inline.jpg.large.png"
     },
     {
-        "name": "Samsung Galaxy S21 Ultra",
+        "name": "Samsung Galaxy S24 Ultra",
         "brand": "Samsung",
         "price": 1199,
         "storage": "256 GB",
-        "image": "https://via.placeholder.com/150"
+        "image": "imagenes/PIC1771002_RL_07.png"
     },
     {
         "name": "Google Pixel 7",
@@ -35,10 +35,10 @@
         "image": "https://via.placeholder.com/150"
     },
     {
-        "name": "Red Magic 9 Pro",
+        "name": "Red Magic 10 Pro",
         "brand": "Red Magic",
         "price": 1299,
-        "storage": "512 GB",
-        "image": "https://via.placeholder.com/150"
+        "storage": "1TB",
+        "image": "imagenes/left-_silver_2.png"
     }
 ]

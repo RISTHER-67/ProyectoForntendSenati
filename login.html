@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="styleslo.css"/>
   
 </head>
-<body class="bg-dark text-white d-flex flex-column min-vh-100">
+<body class=" text-white d-flex flex-column min-vh-100">
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#" id="home-link">AltaTek</a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="indice.html" id="home-link">AltaTek</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -29,11 +29,11 @@
 </nav>
 
   <!-- FORM SLIDER AND LOGO CONTAINER -->
-  <div class="container d-flex justify-content-start align-items-center flex-grow-1 gap-4">
+  <div class="container  d-flex justify-content-start align-items-center flex-grow-1 gap-4">
     <div class="position-relative form-slider" style="flex: 2; max-width: 600px; width: 100%;">
       
       <!-- Login Form -->
-      <div class="form-content show bg-dark p-5 rounded" id="loginForm">
+      <div class="form-content show  p-5 rounded" id="loginForm">
         <h2 class="mb-4 text-center fw-bold">Login</h2>
         <form>
           <div class="mb-3 input-group">
@@ -68,7 +68,7 @@
       </div>
 
       <!-- Register Form -->
-      <div class="form-content bg-dark p-5 rounded" id="registerForm">
+      <div class="form-content  p-5 rounded" id="registerForm">
         <h2 class="mb-4 text-center fw-bold">Registro</h2>
         <form>
           <div class="mb-3 input-group">
@@ -102,12 +102,23 @@
       </div>
 
     </div>
-    <div class="logo-container d-flex justify-content-center align-items-center bg-dark rounded p-4" style="flex: 1; min-width: 200px; max-width: 300px; height: 400px;">
-      <img src="" alt="">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imagenes/Carrucel.png" class="" alt="...">
+        </div>
+      </div>
+      
     </div>
   </div>
+  <footer class="bg-dark text-white py-4 mt-5">
+        <div class="bg-dark">
+            <p class="mb-0">&copy; 2023 AltaGama Store. Todos los derechos reservados.</p>
+        </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
-
+  
 </body>
 </html>
