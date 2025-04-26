@@ -29,24 +29,29 @@ body {
   }
   /* Navigation */
 .navbar {
-  background-color: #ffffff !important;
+  background-color: #212529 !important;
+  
   
   
 }
 
 .navbar-brand {
-  color: #000000 !important;
+  color: #ffffff !important;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding-left: 2%;
   
 }
 
 .nav-link {
-  color: #000000 !important;
+  color: #ffffff !important;
   transition: all 0.3s ease;
+  
 }
-
+.collapse {
+  padding-left: 3%;
+}
 .nav-link:hover {
   color: #ff0000 !important;
   text-shadow: 0 0 5px #ff0000;
@@ -105,8 +110,18 @@ body {
   .form-control::placeholder {
     color: #ffffff;
     opacity: 1;
+
   }
-  
+  .dise{
+    text-decoration: none;
+  }
+a{
+  text-decoration: none;
+  color: #00cc00;
+}
+a:hover{
+  color: #ffffff;
+}
   .btn-outline-success {
     border-color: #00cc00;
     color: #00cc00;
