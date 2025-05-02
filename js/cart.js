@@ -9,7 +9,7 @@ function addProduct(product) {
     cart.push(product);
   }
   updateCart();
-  
+  updateCartCount();
   saveCart();
 }
 
@@ -45,6 +45,7 @@ function changeQuantity(id, quantity) {
     } else {
       cart[index].quantity = quantity;
       updateCart();
+      updateCartCount();
       saveCart();
     }
   } else {
@@ -60,6 +61,7 @@ function removeProduct(id) {
     console.error(`Producto con id ${id} no encontrado para eliminar.`);
   }
   updateCart();
+  updateCartCount();
   saveCart();
 }
 
@@ -116,6 +118,14 @@ function updateCart() {
   document.getElementById('cart-total').textContent = `$${total.toFixed(2)}`;
 }
 
+// Function to update the cart count badge in navbar
+function updateCartCount() {
+  const cartCountElement = document.getElementById('cart-count');
+  if (!cartCountElement) return;
+  const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+  cartCountElement.textContent = totalQuantity > 0 ? totalQuantity : '0';
+}
+
 // Function to save the cart to localStorage
 function saveCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
@@ -127,6 +137,7 @@ function loadCart() {
   if (savedCart) {
     cart = JSON.parse(savedCart);
     updateCart();
+    updateCartCount();
   }
 }
 

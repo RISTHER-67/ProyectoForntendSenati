@@ -1,0 +1,43 @@
+/* Buttons */
+
+.btn-primary {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 15px #fcfafa;
+    transform: translateY(-2px);
+}
+.btn-outline-primary {
+    color: #000000;
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+
+.fa-shopping-cart{
+    color: #000000;
+}
+.fa-shopping-cart:hover{
+    color: #ffffff;
+}
+
+.btn-outline-primary:hover {
+    background: #0D6EFD;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px #fcfafa;
+}
+
+.ini{
+    text-decoration: none;
+    color: #000000;
+}
+.ini:hover{
+    color: #ffffff;
+    text-decoration: none;
+}

@@ -1,0 +1,41 @@
+/* Modal Styles */
+.modal-content {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 20;
+}
+
+.modal-header {
+    border-bottom: 1px solid #333;
+}
+
+.close {
+    color: #ffffff;
+    text-shadow: none;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+.form-control {
+    background-color: #ffffff;
+    border: 1px solid #333;
+    color: #000000;
+}
+.mb-1{
+    width: 35%;
+    padding-right: 10%;
+}
+.mb-2{
+    width: auto;
+    padding-right: 4%;
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}

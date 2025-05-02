@@ -125,6 +125,18 @@
   </footer>
   <script src="../js/main.js"></script>
   <script src="../js/auth.js"></script>
-  
+  <script>
+    function toggleImageSection() {
+      const imageSection = document.querySelector('.imag-carrusel');
+      if (window.innerWidth < 768) {
+        imageSection.classList.add('hidden');
+      } else {
+        imageSection.classList.remove('hidden');
+      }
+    }
+
+    window.addEventListener('load', toggleImageSection);
+    window.addEventListener('resize', toggleImageSection);
+  </script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    border-top: 2px solid #4b4848;
+    padding: 40px 0 20px;
+}
+
+footer h5 {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+footer p, footer a {
+    color: #aaaaaa;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}

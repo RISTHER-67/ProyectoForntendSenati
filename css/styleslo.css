@@ -156,20 +156,6 @@ a:hover{
     width: 100%;
     font-size: 0.9rem;
   }
-  
-  @media (max-width: 480px) {
-    .mb-3, .mb-4 {
-      height: auto;
-    }
-    .btn {
-      height: 38px;
-      font-size: 14px;
-    }
-    .form-content h2 {
-      font-size: 2rem;
-    }
-  }
-/*Carrusel */
 
 .imag-carrusel {
   width: 40%; /* Reducimos el tamaño para que no tape el formulario */
@@ -210,4 +196,9 @@ footer p{
   color: #aaaaaa;
   transition: all 0.3s ease;
   text-align: center;
+}
+
+/* Clase para ocultar la sección de imágenes */
+.imag-carrusel.hidden {
+  display: none !important;
 }

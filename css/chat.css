@@ -1,0 +1,45 @@
+/* Chat Elements */
+#chatbot-container {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 20px rgba(255,0,0,0.3);
+    z-index: 1000;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 300px;
+    max-height: 400px;
+    display: none;
+}
+
+#chat-messages {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+#chat-toggle {
+    background: linear-gradient(135deg, #007BFF, #007BFF);
+    box-shadow: 0 0 15px #ffffff;
+    z-index: 999;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#chat-toggle:hover {
+    transform: scale(1.1);
+}
+
+#chat-toggle i {
+    margin-right: 0;
+}

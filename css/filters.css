@@ -1,0 +1,28 @@
+/* Filter Menu */
+.filter-menu {
+    margin-bottom: 1.5rem;
+    border: 2px solid #e6e2e2;
+    border-radius: 5px;
+}
+
+.filter-menu .btn {
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.2s;
+    color: #000000;
+}
+
+.filter-menu .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.filter-menu label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #000000;
+}

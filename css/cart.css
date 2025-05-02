@@ -1,0 +1,49 @@
+/* Estilos para el carrito de compras */
+.cart-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-outline-light {
+    background-color: #4dff00;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.btn-outline-light:hover {
+    background-color: #4dff00;
+    color: #000000;
+}
+
+.ic {
+    color: #4dff00;
+}
+
+.total-box {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.summary-text {
+    font-size: 14px;
+    color: #000000;
+}
+
+.footer-icons {
+    color: #000000;
+    font-size: 14px;
+}
+
+.btn-checkout {
+    background-color: #ff0040;
+    border: none;
+}
+
+.btn-checkout:hover {
+    background-color: #e60039;
+}
