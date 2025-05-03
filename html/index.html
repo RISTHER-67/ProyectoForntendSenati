@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALTATEK</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="logo">ALTA<span>TEK</span></div>
+      <nav>
+        <a href="#">SmartTEKs</a>
+        <a href="#">Accesorios</a>
+        <a href="#">Novedades</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Soporte</a>
+      </nav>
+    </div>
+    <div class="navbar-right">
+      <div class="search">
+        <input type="text" placeholder="Buscar...">
+        <i class="fas fa-search"></i>
+      </div>
+      <i class="fas fa-user"></i>
+      <i class="fas fa-heart"></i>
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="badge">3</span>
+      </div>
+    </div>
+  </header>
+  
+
+  <section class="slider">
+    <div class="slides">
+      <div class="slide active">
+        <img src="../imagenes/Efecto.jpeg" alt="iTEK 15 Pro Max">
+        <div class="content">
+          <h1>iTEK 15 Pro Max</h1>
+          <p>Chip A17 Pro, cámara de 48MP y Dynamic Island.</p>
+          <button class="buy">Comprar ahora</button>
+          <button class="details">Ver detalles</button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="../imagenes/Carrucel.png" alt="Galaxy S24 Ultra">
+        <div class="content">
+          <h1>Galaxy S24 Ultra</h1>
+          <p>Zoom 100x, IA avanzada y pantalla Dynamic AMOLED.</p>
+          <button class="buy">Comprar ahora</button>
+          <button class="details">Ver detalles</button>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="../imagenes/Samsung Galaxy S24 ultra.jpeg" alt="Xiaomi 14 Pro">
+        <div class="content">
+          <h1>Xiaomi 14 Pro</h1>
+          <p>Colaboración con Leica, Snapdragon 8 Gen 3.</p>
+          <button class="buy">Comprar ahora</button>
+          <button class="details">Ver detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <section class="oferta-especial">
+    <div class="oferta-contenido">
+      <span class="badge">OFERTA ESPECIAL</span>
+      <p>iTEK 15 Pro Max - 15% de descuento por tiempo limitado</p>
+    </div>
+    <a href="#" class="btn-oferta">Ver oferta</a>
+  </section>
+
+  
+  <section class="productos-destacados">
+    <div class="encabezado">
+      <h2>Productos Destacados</h2>
+      <p>Descubre nuestra selección premium de smartTEKs</p>
+    </div>
+  
+    <div class="filtros">
+      <select>
+        <option>Todas las marcas</option>
+        <option>Apple</option>
+        <option>Samsung</option>
+        <option>Huawei</option>
+      </select>
+      <select>
+        <option>Cualquier capacidad</option>
+        <option>128 GB</option>
+        <option>256 GB</option>
+        <option>512 GB</option>
+      </select>
+      <select>
+        <option>Todos los colores</option>
+        <option>Negro</option>
+        <option>Plata</option>
+        <option>Azul</option>
+      </select>
+      <div class="rango-precio">
+        <label>$500</label>
+        <input type="range" min="500" max="2500" />
+        <label>$2500</label>
+      </div>
+    </div>
+  
+    <div class="tags">
+      <button class="activo">Todos</button>
+      <button>Apple</button>
+      <button>Samsung</button>
+      <button>Otros</button>
+    </div>
+  
+    <div class="grid-productos">
+      <!-- Tarjeta producto -->
+      <div class="producto">
+        <div class="etiqueta">Nuevo</div>
+        <div class="img-producto"></div>
+        <div class="info">
+          <small>Apple</small>
+          <h4>iTEK 15 Pro</h4>
+          <ul>
+            <li><b>Almacenamiento:</b> 256 GB</li>
+            <li><b>Pantalla:</b> 6.1" OLED</li>
+            <li><b>Cámara:</b> 48 MP</li>
+          </ul>
+          <p class="precio">$999</p>
+          <button>🛒 Agregar</button>
+        </div>
+      </div>
+  
+      <div class="producto">
+        <div class="img-producto"></div>
+        <div class="info">
+          <small>Samsung</small>
+          <h4>Galaxy S23 Ultra</h4>
+          <ul>
+            <li><b>Almacenamiento:</b> 512 GB</li>
+            <li><b>Pantalla:</b> 6.8" AMOLED</li>
+            <li><b>Cámara:</b> 200 MP</li>
+          </ul>
+          <p class="precio">$1,199</p>
+          <button>🛒 Agregar</button>
+        </div>
+      </div>
+
+      <div class="producto">
+        <div class="img-producto"></div>
+        <div class="info">
+          <small>Samsung</small>
+          <h4>Galaxy S23 Ultra</h4>
+          <ul>
+            <li><b>Almacenamiento:</b> 512 GB</li>
+            <li><b>Pantalla:</b> 6.8" AMOLED</li>
+            <li><b>Cámara:</b> 200 MP</li>
+          </ul>
+          <p class="precio">$1,199</p>
+          <button>🛒 Agregar</button>
+        </div>
+      </div>
+      
+      <div class="producto">
+        <div class="img-producto"></div>
+        <div class="info">
+          <small>Samsung</small>
+          <h4>Galaxy S23 Ultra</h4>
+          <ul>
+            <li><b>Almacenamiento:</b> 512 GB</li>
+            <li><b>Pantalla:</b> 6.8" AMOLED</li>
+            <li><b>Cámara:</b> 200 MP</li>
+          </ul>
+          <p class="precio">$1,199</p>
+          <button>🛒 Agregar</button>
+        </div>
+      </div>
+
+  
+    </div>
+  </section>
+  
+
+  <section class="premium">
+    <h2>Únete a nuestro programa de clientes premium</h2>
+    <p>
+      Obtén acceso anticipado a los últimos lanzamientos, descuentos exclusivos y servicio de atención prioritaria.
+    </p>
+    <div class="botones">
+      <button class="registro">Registrarse ahora</button>
+      <button class="conocer">Conocer más</button>
+    </div>
+  </section>
+
+  
+
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-col">
+        <h3 class="logo">ALTA<span>TEK</span></h3>
+        <p>Tu destino premium para smartTEKs y accesorios de alta gama.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces rápidos</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">SmartTEKs</a></li>
+          <li><a href="#">Accesorios</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Soporte</h4>
+        <ul>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Política de devoluciones</a></li>
+          <li><a href="#">Envíos</a></li>
+          <li><a href="#">Garantía</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Suscríbete</h4>
+        <p>Recibe las últimas noticias y ofertas exclusivas.</p>
+        <form class="suscripcion">
+          <input type="email" placeholder="Tu email">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 ALTATEK. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="../js/script.js"></script>
+</body>
+</html>

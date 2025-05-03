@@ -1,0 +1,565 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: white;
+}
+
+.navbar {
+  background: #000;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #FFA500;
+}
+
+.logo span {
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.search input {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 5px;
+  width: 140px;
+}
+
+.search i {
+  color: #aaa;
+}
+
+.navbar-right i {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon .badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #FFA500;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFA500;
+}
+
+.logo span {
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(0.4);
+}
+
+.content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  z-index: 2;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+button.buy {
+  background: #FFA500;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.details {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.controls button {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
+
+.oferta-especial {
+  background: linear-gradient(to right, #e08a00, #d97600);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  margin-top: -5px;
+}
+
+.oferta-contenido {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.badge {
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.btn-oferta {
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-oferta:hover {
+  background: #333;
+}
+
+
+
+.productos-destacados {
+  padding: 40px;
+  background-color: #000;
+  color: white;
+}
+
+.productos-destacados .encabezado h2 {
+  font-size: 28px;
+}
+
+.productos-destacados .encabezado p {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.filtros select,
+.filtros input[type="range"] {
+  background: #1e1e1e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tags button {
+  background: #222;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tags .activo {
+  background: #FFA500;
+  color: black;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.producto {
+  background-color: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 8px #000;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.etiqueta {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #FFA500;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.img-producto {
+  height: 200px;
+  background: url('https://via.placeholder.com/300x200?text=Producto') center/cover no-repeat;
+  border-bottom: 1px solid #333;
+}
+
+.info {
+  padding: 15px;
+  font-size: 14px;
+}
+
+.info small {
+  color: #aaa;
+}
+
+.info h4 {
+  font-size: 16px;
+  margin: 5px 0 10px;
+}
+
+.info ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 10px;
+}
+
+.info ul li {
+  margin-bottom: 3px;
+}
+
+.precio {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFA500;
+  margin-bottom: 10px;
+}
+
+.info button {
+  background: #FFA500;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.info button:hover {
+  background: #cc8400;
+}
+
+
+.premium {
+  background: linear-gradient(to right, #0b1543, #000);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.premium .etiqueta {
+  background: #FFA500;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.premium h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.premium p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.premium .botones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.premium .registro {
+  background: #FFA500;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.premium .registro:hover {
+  background: #cc8400;
+}
+
+.premium .conocer {
+  background: transparent;
+  color: white;
+  border: 1px solid #555;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s;
+}
+
+.premium .conocer:hover {
+  background: #111;
+  border-color: #888;
+}
+
+
+.footer {
+  background: #0a0a0a;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer .logo {
+  color: #FFA500;
+  font-size: 20px;
+}
+
+.footer .logo span {
+  color: white;
+}
+
+.footer p {
+  color: #aaa;
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #FFA500;
+}
+
+.social a {
+  background: #222;
+  color: white;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.social a:hover {
+  background: #FFA500;
+  color: black;
+}
+
+.suscripcion {
+  display: flex;
+  margin-top: 10px;
+}
+
+.suscripcion input {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  background: #222;
+  color: white;
+}
+
+.suscripcion button {
+  background: #FFA500;
+  color: black;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #777;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #FFA500;
+}
